@@ -1,0 +1,22 @@
+Notas Docker
+
+Docker es una manera de aislar lo que tienes en el host machine (la computadora) de lo que tienes en
+el contenedor de Docker. Todas las acciones ejecutadas en el contenedor no tendrán ningún efecto en 
+el host machine (la computadora)
+El comando más simple que podemos ejecutar es "ducker run" a este se le agrega la imagen que se quiere
+correr ej. "ducker run ubuntu". Si queremos entrar al contenedor de manera interactiva se agrega "-it"
+ej. "ducker run -it ubuntu".
+
+Instalar python
+Primero actualizar "apt update"
+después instalar "apt intstall python3"
+
+Para correr una nueva imagen de Docker 
+    "docker run -it python:3.13.11" donde "pyhton" es la imagen y "3.13.11" es el tag (etiqueta), todo en conjunto
+es la "Docker Image"
+-una versión más pequeña de python
+    "docker run -it python:3.13.11-slim" 
+-cambiando el entrypoint a bash
+    "ducker run -it --entrypoint=bash python:3.13.11-slim"
+
+me quedé en el minuto 19:17 retomar desdde ese punto.
