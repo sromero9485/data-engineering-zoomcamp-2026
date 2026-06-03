@@ -36,3 +36,7 @@ cd /app/test
 ls -la
 cat file1.txt
 python list_files.py
+
+docker run -it --entrypoint=bash --rm test:pandas
+
+
