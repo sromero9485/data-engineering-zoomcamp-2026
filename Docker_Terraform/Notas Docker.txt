@@ -20,3 +20,22 @@ es la "Docker Image"
     "ducker run -it --entrypoint=bash python:3.13.11-slim"
 
 me quedé en el minuto 19:17 retomar desdde ese punto.
+
+docker run -it \
+    --rm \
+    --entrypoint=bash \
+    python:3.9.16-slim
+
+docker run -it \
+    --rm \
+    -v $(pwd)/test:/app/test \
+    --entrypoint=bash \
+    python:3.9.16-slim
+
+cd /app/test
+ls -la
+cat file1.txt
+python list_files.py
+
+
+docker run -it --entrypoint=bash --rm test:pandas
