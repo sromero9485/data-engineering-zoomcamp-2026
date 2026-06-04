@@ -1,15 +1,17 @@
 # data-engineering-zoomcamp-2026
-repository for data engineering zoomcamp
 
-Arquitectura propuesta
+Repository for data engineering zoomcamp
 
+## Arquitectura propuesta
+
+```
 data-engineering-zoomcamp-2026/
 ├── README.md                          # Overview y guía de inicio rápido
 ├── requirements.txt                   # Dependencias globales
 ├── docker-compose.yml                 # Servicios comunes (Postgres, pgAdmin, Kestra)
 ├── .env.example                       # Template de variables de entorno
 │
-├── 01-docker-terraform/              # Module 1: Containerization & IaC
+├── 01-docker-terraform/               # Module 1: Containerization & IaC
 │   ├── README.md                      # Objetivos y recursos del módulo
 │   ├── homework/                      # Tareas entregables
 │   │   ├── solution.py
@@ -89,3 +91,34 @@ data-engineering-zoomcamp-2026/
 ├── .gitignore
 ├── Makefile                           # (Opcional, para automatizar tareas)
 └── LICENSE
+```
+
+## Estructura de módulos
+
+Cada módulo sigue este patrón:
+
+| Carpeta | Descripción |
+|---------|-------------|
+| `README.md` | Objetivos, recursos y guía del módulo |
+| `homework/` | Tareas entregables con soluciones |
+| `notes/` | Tus notas personales de aprendizaje |
+| `scripts/` o `flows/` o `sql/` | Código de referencia y ejemplos |
+
+## Primeros pasos
+
+1. Clona el repositorio
+2. Copia `.env.example` a `.env`
+3. Configura tus variables de entorno
+4. Ejecuta `docker-compose up` para los servicios comunes
+5. Navega a cada módulo y sigue el README correspondiente
+
+## Requisitos
+
+- Python 3.10+
+- Docker & Docker Compose
+- Terraform (para módulos IaC)
+- Git
+
+## Contribuyendo
+
+Sigue la estructura propuesta al agregar nuevo contenido a cada módulo.
